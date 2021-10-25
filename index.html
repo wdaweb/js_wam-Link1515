@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindQ</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="controller">
+      <div class="btn">
+        <button type="button" id="startbtn">開始</button>
+        <button type="button" id="resetbtn">重來</button>
+      </div>
+      <br />
+      <div class="labelContainer">
+        <span>難度: </span>
+        <input type="radio" name="difficulty" id="easy" checked /><label for="easy">簡單</label>
+        <input type="radio" name="difficulty" id="normal" /><label for="normal">普通</label>
+        <input type="radio" name="difficulty" id="hard" /><label for="hard">困難</label>
+      </div>
+      <div class="timeNscore">時間: <span id="timeText">0</span> 分數: <span id="scoreText">0</span></div>
+    </div>
+    <h1 id="logo">Find<span>Q</span></h1>
+    <table id="gameTable"></table>
+    <table id="scoreTable">
+      <tr>
+        <td colspan="7" style="font-size: 2rem">高分榜</td>
+      </tr>
+      <tr>
+        <td rowspan="2"></td>
+        <td colspan="2">簡單</td>
+        <td colspan="2">普通</td>
+        <td colspan="2">困難</td>
+      </tr>
+      <tr>
+        <td>玩家</td>
+        <td>分數</td>
+        <td>玩家</td>
+        <td>分數</td>
+        <td>玩家</td>
+        <td>分數</td>
+      </tr>
+      <tr>
+        <td>NO.1</td>
+        <td class="easy-name"></td>
+        <td class="easy-score"></td>
+        <td class="normal-name"></td>
+        <td class="normal-score"></td>
+        <td class="hard-name"></td>
+        <td class="hard-score"></td>
+      </tr>
+      <tr>
+        <td>NO.2</td>
+        <td class="easy-name"></td>
+        <td class="easy-score"></td>
+        <td class="normal-name"></td>
+        <td class="normal-score"></td>
+        <td class="hard-name"></td>
+        <td class="hard-score"></td>
+      </tr>
+      <tr>
+        <td>NO.3</td>
+        <td class="easy-name"></td>
+        <td class="easy-score"></td>
+        <td class="normal-name"></td>
+        <td class="normal-score"></td>
+        <td class="hard-name"></td>
+        <td class="hard-score"></td>
+      </tr>
+      <tr>
+        <td>NO.4</td>
+        <td class="easy-name"></td>
+        <td class="easy-score"></td>
+        <td class="normal-name"></td>
+        <td class="normal-score"></td>
+        <td class="hard-name"></td>
+        <td class="hard-score"></td>
+      </tr>
+      <tr>
+        <td>NO.5</td>
+        <td class="easy-name"></td>
+        <td class="easy-score"></td>
+        <td class="normal-name"></td>
+        <td class="normal-score"></td>
+        <td class="hard-name"></td>
+        <td class="hard-score"></td>
+      </tr>
+    </table>
+    <div class="gameoverInfo">
+      <div class="box">
+        <h2>
+          在20秒內，你找到了 <span id="QNum">0</span> 個 <span style="color: #0fa">Q</span>
+          <br />
+          <span id="info">請繼續加油!</span>
+        </h2>
+        <div class="typeName">
+          <input type="text" maxlength="8" />
+        </div>
+        <button type="button" id="comfirmBtn">確定</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="./findQ.js"></script>
+</html>
