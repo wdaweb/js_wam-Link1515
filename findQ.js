@@ -29,8 +29,8 @@ let newRecord = {
 };
 
 // 讀取localStorage
-if (localStorage.getItem('highScore')) {
-  var highScore = JSON.parse(localStorage.getItem('highScore'));
+if (localStorage.getItem('highScore_FindQ')) {
+  var highScore = JSON.parse(localStorage.getItem('highScore_FindQ'));
   updateScoreTable();
 } else {
   var highScore = {
@@ -164,7 +164,7 @@ comfirmBtn.onclick = () => {
   newRecord.name = typeName.firstElementChild.value;
   highScore[flag].splice(newRecord.rank, 0, { name: newRecord.name ? newRecord.name : 'anonymous', score: score });
   updateScoreTable();
-  localStorage.setItem('highScore', JSON.stringify(highScore));
+  localStorage.setItem('highScore_FindQ', JSON.stringify(highScore));
 
   score = 0;
   scoreText.innerText = score;

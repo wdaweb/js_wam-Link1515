@@ -67,6 +67,7 @@ button:disabled:hover {
 
 #logo {
   font-size: 4rem;
+  user-select: none;
 }
 #logo span {
   color: #0fa;
@@ -78,6 +79,7 @@ button:disabled:hover {
   height: 30px;
   font-size: 0;
   text-align: center;
+  user-select: none;
 }
 
 .labelContainer span:first-child {
@@ -111,6 +113,7 @@ button:disabled:hover {
 .timeNscore {
   font-size: 1.5rem;
   border-bottom: 5px solid #0fa;
+  user-select: none;
 }
 
 #timeText {
